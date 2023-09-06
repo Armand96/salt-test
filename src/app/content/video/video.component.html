@@ -10,7 +10,7 @@
 
       <a *ngFor="let video of videos; let i = index" routerLink="/" [class]="i == 0 ? 'col-span-2 row-span-2 h-[400px]':'col-span-1 h-[195px]'" class="bg-cover relative" style="background-image: url('{{video.imgThumbnail}}');">
         <div class="absolute bottom-0 px-4 py-3 bg-gray-500/50 w-full">
-          <h1 class="font-semibold" [class]="i == 0 ? 'text-4xl': 'text-2xl'"> {{ video.videoTitle }} </h1>
+          <h1 class="font-semibold" [class]="i == 0 ? 'text-4xl': 'text-2xl'" *ngIf="i == 0"> {{ video.videoTitle }} </h1>
           <div class="flex justify-between">
             <p class=""> {{ video.uploader }} </p>
             <p>{{ video.totalViewer }} Views</p>
@@ -35,7 +35,7 @@
     <hr class="bg-white text-white border border-white font-bold mt-3">
 
     <!-- START NGFOR -->
-    <a routerLink="/" class="grid grid-cols-4 my-1 py-2 px-1 gap-x-2" *ngFor="let act of activities">
+    <a routerLink="/" class="grid grid-cols-4 my-1 py-2 px-1 gap-x-2 hover:bg-white" *ngFor="let act of activities">
       <div class="col-span-1 box-border bg-cover border h-20 w-full" style="background-image: url('{{act.imgThumbnail}}');"></div>
       <div class="col-span-3">
         <!-- USERNAME & ACTION -->
@@ -50,8 +50,13 @@
         </div>
 
         <!-- TIMESTAMP -->
-        <div class="flex mt-2">
-          <i class="fas fa-comment mt-1 mr-2 text-white"></i>
+        <div class="flex mt-2" [ngSwitch]="act.activity">
+          <i *ngSwitchCase="'comment'" class="fas fa-comment mt-1 mr-2 text-white"></i>
+          <i *ngSwitchCase="'add'" class="fas fa-video mt-1 mr-2 text-white"></i>
+          <i *ngSwitchCase="'share'" class="fas fa-file mt-1 mr-2 text-white"></i>
+          <i *ngSwitchCase="'achieve'" class="fas fa-unlock mt-1 mr-2 text-white"></i>
+          <i *ngSwitchCase="'like'" class="fas fa-heart mt-1 mr-2 text-white"></i>
+          <i *ngSwitchDefault class="fas fa-comment mt-1 mr-2 text-white"></i>
           <p class="text-gray-200"> {{ act.timestamp }} </p>
         </div>
       </div>

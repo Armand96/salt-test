@@ -25,3 +25,8 @@ input::placeholder {
 a:hover {
   color: gray;
 }
+
+.hoper:hover {
+  /* background-color: #953e45; */
+  background-color: #953e45;
+}
