@@ -1,0 +1,108 @@
+<div class="md:mx-5 lg:mx-20">
+  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col ">
+    <!-- Navbar -->
+    <div class="w-full navbar bg-transparent">
+      <div class="flex-1 px-2 mx-2 text-white sm:display md:hidden ">
+        <label class="btn btn-ghost" for="my-drawer"><i class="fas fa-bars"></i></label>
+      </div>
+
+      <div class="text-white mr-5">
+        <p class="text-3xl"><b>Social</b>Network</p>
+      </div>
+
+      <div class="">
+        <div class="form-control p-0">
+          <div class="input-group rounded-none">
+            <input type="text" placeholder="Find" class="input rounded-none input-theme" />
+            <div class="w-10 bg-theme pt-2">
+              <i class="fas fa-magnifying-glass main-theme mt-2 ml-2"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <button class="btn rounded-none bg-theme">
+          <i class="fas fa-upload mr-2"></i>
+          <p>Upload</p>
+        </button>
+      </div>
+
+      <!-- PROFILE -->
+      <div class="flex-none hidden lg:block">
+        <ul class="menu menu-horizontal">
+          <div class="dropdown dropdown-bottom dropdown-end">
+            <label tabindex="0" class="">
+              <div class="px-1">
+                <div class="w-12 rounded-none">
+                  <img class="btn btn-square" />
+                </div>
+              </div>
+            </label>
+            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="w-full">Edit Profile</a></li>
+              <li><a class="w-full">Logout</a></li>
+            </ul>
+          </div>
+
+          <li>
+            <div class="grid grid-rows-1 p-0 m-0">
+              <p class="text-white grid-cols-1"> <b class="text-lg">First Name</b> <br> Last Name</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- MOBILE -->
+      <div class="flex-none lg:hidden ml-auto dropdown dropdown-bottom dropdown-end">
+        <label tabindex="0" class="">
+          <div class="avatar pr-1">
+            <div class="w-12 rounded-full">
+              <img />
+            </div>
+          </div>
+        </label>
+        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-40">
+          <li><a class="w-full">Edit Profile</a></li>
+          <li><a class="w-full">Logout</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <br>
+    <hr class="bg-white border border-white">
+
+    <div class="text-white flex text-xl my-3">
+      <a routerLink="/video" class="mx-3">Video</a> /
+      <a routerLink="/people" class="mx-3">People</a> /
+      <a routerLink="/documents" class="mx-3">Documents</a> /
+      <a routerLink="/events" class="mx-3">Events</a> /
+      <a routerLink="/commodities" class="mx-3">Commodities</a> /
+      <a routerLink="/favorites" class="mx-3">Favorites</a> /
+      <a routerLink="/channels" class="mx-3">Channels</a>
+    </div>
+
+    <hr class="bg-white border border-white">
+
+    <!-- Page content here -->
+    <div class="ml-3 mr-3 mt-3">
+      <router-outlet></router-outlet>
+
+      <app-footer></app-footer>
+    </div>
+  </div>
+  <div class="drawer-side">
+    <label for="my-drawer-3" class="drawer-overlay"></label>
+    <ul class="menu p-4 w-80 bg-base-100">
+      <!-- Sidebar content here -->
+      <!-- <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li> -->
+
+    </ul>
+
+  </div>
+</div>
+
+

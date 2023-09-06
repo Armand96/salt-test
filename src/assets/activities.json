@@ -1,0 +1,50 @@
+[
+  {
+    "imgThumbnail": "https://fastly.picsum.photos/id/845/536/354.jpg?hmac=N0jid6KpFZyaCJhFdFJVRQUImWIJuxYl53n3GkFj9Ps",
+    "username": "John Stalnior",
+    "activity": "comment",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat omnis eaque, necessitatibus quasi officia, repellendus eius eligendi sed numquam ipsum nesciunt quidem maxime atque illo. Consequatur quia soluta incidunt. ",
+    "activityDetail": "commented",
+    "timestamp": "2023-09-06T08:00:00Z"
+  },
+  {
+    "imgThumbnail": "https://picsum.photos/id/0/5000/3333",
+    "username": "John Stalnior",
+    "activity": "add",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat omnis eaque, necessitatibus quasi officia, repellendus eius eligendi sed numquam ipsum nesciunt quidem maxime atque illo. Consequatur quia soluta incidunt. ",
+    "activityDetail": "added a new video",
+    "timestamp": "2023-09-06T10:00:00Z"
+  },
+  {
+    "imgThumbnail": "https://picsum.photos/id/1/5000/3333",
+    "username": "John Stalnior",
+    "activity": "share",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat omnis eaque, necessitatibus quasi officia, repellendus eius eligendi sed numquam ipsum nesciunt quidem maxime atque illo. Consequatur quia soluta incidunt. ",
+    "activityDetail": "shared a document",
+    "timestamp": "2023-09-06T11:00:00Z"
+  },
+  {
+    "imgThumbnail": "https://picsum.photos/id/2/5000/3333",
+    "username": "Arjun",
+    "activity": "achieve",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat omnis eaque, necessitatibus quasi officia, repellendus eius eligendi sed numquam ipsum nesciunt quidem maxime atque illo. Consequatur quia soluta incidunt. ",
+    "activityDetail": "unlocked new badge",
+    "timestamp": "2023-09-06T12:00:00Z"
+  },
+  {
+    "imgThumbnail": "https://yamatomagazinehome.files.wordpress.com/2019/06/vergil-yamato-katana-devil-may-cry-5-uhdpaper.com-4k-135.jpg",
+    "username": "Michael",
+    "activity": "upload",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat omnis eaque, necessitatibus quasi officia, repellendus eius eligendi sed numquam ipsum nesciunt quidem maxime atque illo. Consequatur quia soluta incidunt. ",
+    "activityDetail": "upload a new video",
+    "timestamp": "2023-09-06T13:00:00Z"
+  },
+  {
+    "imgThumbnail": "https://yamatomagazinehome.files.wordpress.com/2019/06/vergil-yamato-katana-devil-may-cry-5-uhdpaper.com-4k-135.jpg",
+    "username": "Yamato",
+    "activity": "like",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat omnis eaque, necessitatibus quasi officia, repellendus eius eligendi sed numquam ipsum nesciunt quidem maxime atque illo. Consequatur quia soluta incidunt.",
+    "activityDetail": "liked a video",
+    "timestamp": "2023-09-06T14:00:00Z"
+  }
+]

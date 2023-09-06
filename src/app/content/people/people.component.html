@@ -1,0 +1,25 @@
+<div class="col-span-2">
+  <div class="grid grid-cols-2 mb-3">
+    <p class="text-4xl">People</p>
+    <a routerLink="/" class="text-lg mt-3">View All</a>
+  </div>
+
+  <div class="grid grid-cols-3 gap-2">
+    <a routerLink="/" *ngFor="let pep of people; let i = index"  [class]="i == 0 ? 'col-span-2 row-span-2 h-[400px]':'col-span-1 h-[195px]'" class="bg-cover relative" style="background-image: url('{{pep.imgThumbnail}}');">
+      <div class="absolute bottom-0 px-4 py-3 bg-gray-500/50 w-full">
+        <a routerLink="" class="font-semibold" [class]="i == 0 ? 'text-4xl': 'text-2xl'"> {{ pep.username }} </a>
+        <div class="flex justify-between">
+          <p class="" *ngIf="i == 0"> {{pep.job}} </p>
+          <p *ngIf="i == 0"> {{pep.totalViewer}} views</p>
+        </div>
+      </div>
+    </a>
+
+    <a routerLink="/" class="col-span-1 flex items-center border border-white justify-center h-[195px]">
+      <div class="flex">
+        <i class="btn btn-circle bg-transparent border-white pt-3 fa-regular fa-circle mr-2"></i>
+        <p class="mt-2 whitespace-pre-line">Show Your Work</p>
+      </div>
+    </a>
+  </div>
+</div>

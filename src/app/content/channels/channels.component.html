@@ -1,0 +1,19 @@
+<div class="grid grid-cols-3 flex">
+  <p class="text-4xl">Channels</p>
+  <a routerLink="/" class="col-span-2 text-sm mt-3 ml-10">Browse All Channels</a>
+</div>
+
+<hr class="bg-white text-white border border-white font-bold mt-3">
+
+<!-- START NGFOR -->
+<div class="grid grid-cols-2 my-1 py-2 px-1 gap-y-4 gap-x-2">
+
+  <a *ngFor="let chn of channels" routerLink="/" class="col-span-1 box-border bg-cover border h-32 w-full relative" style="background-image: url('{{ chn.imgThumbnail }}');">
+    <div class="absolute bottom-0 px-4 py-3 bg-gray-500/50 w-full">
+      <h1 class="font-semibold text-xs"> {{chn.channelName}} </h1>
+    </div>
+  </a>
+
+</div>
+<!-- END NG FOR -->
+<hr class="bg-white text-white border border-white font-bold">

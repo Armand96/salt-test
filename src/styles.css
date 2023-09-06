@@ -1,1 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* You can add global styles to this file, and also import other style files */
+
+.input-theme {
+  background-color: #f4e3cf;
+  color: #953e45;
+}
+
+input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #953e45;
+}
+
+.bg-theme {
+  background-color: #f4e3cf;
+  color: #953e45;
+}
+
+.main-theme {
+  color: #953e45;
+}
+
+a:hover {
+  color: gray;
+}
