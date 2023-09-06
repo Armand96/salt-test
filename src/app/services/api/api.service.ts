@@ -1,41 +1,41 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { IActivity } from 'src/app/interfaces/activity';
-import { IChannel } from 'src/app/interfaces/channel';
-import { IDocument } from 'src/app/interfaces/document';
-import { IPeople } from 'src/app/interfaces/people';
-import { IVideo } from 'src/app/interfaces/video';
+import { IActivity } from '../../interfaces/activity';
+import { IChannel } from '../../interfaces/channel';
+import { IDocument } from '../../interfaces/document';
+import { IPeople } from '../../interfaces/people';
+import { IVideo } from '../../interfaces/video';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ApiService {
   url = `/assets/`;
-  videoUrl = this.url + "videos.json";
-  activityUrl = this.url + "activities.json";
-  peopleUrl = this.url + "people.json";
-  channelUrl = this.url + "channels.json";
-  documentUrl = this.url + "documents.json";
+  videoUrl = this.url + 'videos.json';
+  activityUrl = this.url + 'activities.json';
+  peopleUrl = this.url + 'people.json';
+  channelUrl = this.url + 'channels.json';
+  documentUrl = this.url + 'documents.json';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  getVideos(){
+  getVideos() {
     return this.http.get<IVideo[]>(this.videoUrl);
   }
 
-  getActivities(){
+  getActivities() {
     return this.http.get<IActivity[]>(this.activityUrl);
   }
 
-  getPeople(){
+  getPeople() {
     return this.http.get<IPeople[]>(this.peopleUrl);
   }
 
-  getChannels(){
+  getChannels() {
     return this.http.get<IChannel[]>(this.channelUrl);
   }
 
-  getDocuments(){
+  getDocuments() {
     return this.http.get<IDocument[]>(this.documentUrl);
   }
 }

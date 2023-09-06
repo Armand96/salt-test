@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { IPeople } from 'src/app/interfaces/people';
-import { ApiService } from 'src/app/services/api/api.service';
+import { IPeople } from '../../interfaces/people';
+import { ApiService } from '../../services/api/api.service';
 
 @Component({
   selector: 'app-people',
   templateUrl: './people.component.html',
-  styleUrls: ['./people.component.css']
+  styleUrls: ['./people.component.css'],
 })
 export class PeopleComponent implements OnInit {
   constructor(private api: ApiService) {}
@@ -16,11 +16,11 @@ export class PeopleComponent implements OnInit {
     this.loadPeople();
   }
 
-  loadPeople(){
+  loadPeople() {
     this.api.getPeople().subscribe({
-      next: response => {
+      next: (response) => {
         this.people = response;
-      }
+      },
     });
   }
 }

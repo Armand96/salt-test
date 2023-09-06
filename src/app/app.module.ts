@@ -14,6 +14,8 @@ import { FavoritesComponent } from './content/favorites/favorites.component';
 import { ChannelsComponent } from './content/channels/channels.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import 'zone.js';
+import 'zone.js/dist/long-stack-trace-zone.js';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     ChannelsComponent,
     FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

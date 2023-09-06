@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { IActivity } from 'src/app/interfaces/activity';
-import { IVideo } from 'src/app/interfaces/video';
-import { ApiService } from 'src/app/services/api/api.service';
+import { IActivity } from '../../interfaces/activity';
+import { IVideo } from '../../interfaces/video';
+import { ApiService } from '../../services/api/api.service';
 
 @Component({
   selector: 'app-video',
   templateUrl: './video.component.html',
-  styleUrls: ['./video.component.css']
+  styleUrls: ['./video.component.css'],
 })
 export class VideoComponent implements OnInit {
-
-  constructor(private api:ApiService){}
+  constructor(private api: ApiService) {}
 
   videos: IVideo[] = [];
   activities: IActivity[] = [];
@@ -20,23 +19,21 @@ export class VideoComponent implements OnInit {
     this.loadAcitivties();
   }
 
-  loadVideos(){
+  loadVideos() {
     this.api.getVideos().subscribe({
-      next: response => {
+      next: (response) => {
         this.videos = response;
         console.log(this.videos);
-      }
+      },
     });
   }
 
-  loadAcitivties(){
+  loadAcitivties() {
     this.api.getActivities().subscribe({
-      next: response => {
+      next: (response) => {
         this.activities = response;
         console.log(this.activities);
-      }
+      },
     });
   }
-
-
 }
