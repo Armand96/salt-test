@@ -1,10 +1,12 @@
-<div class="md:mx-5 lg:mx-20">
+<div class="sm:mx-5 md:mx-20 lg:mx-32 xl:mx-52 2xl:mx-64">
   <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content flex flex-col ">
+  <div class="drawer-content flex flex-col">
     <!-- Navbar -->
     <div class="w-full navbar bg-transparent">
-      <div class="flex-1 px-2 mx-2 text-white sm:display md:hidden ">
-        <label class="btn btn-ghost" for="my-drawer"><i class="fas fa-bars"></i></label>
+      <div class="flex-1 px-2 mx-2 text-white sm:display md:hidden">
+        <label class="btn btn-ghost" for="my-drawer"
+          ><i class="fas fa-bars"></i
+        ></label>
       </div>
 
       <div class="text-white mr-5">
@@ -14,7 +16,11 @@
       <div class="w-[500px]">
         <div class="form-control p-0 w-full">
           <div class="input-group rounded-none border-none w-full">
-            <input type="text" placeholder="Find" class="input rounded-none input-theme w-11/12" />
+            <input
+              type="text"
+              placeholder="Find"
+              class="input rounded-none input-theme w-11/12"
+            />
             <div class="bg-theme pt-2 w-1/12">
               <i class="fas fa-magnifying-glass main-theme mt-2 ml-2"></i>
             </div>
@@ -35,12 +41,33 @@
           <div class="dropdown dropdown-bottom dropdown-end">
             <label tabindex="0" class="">
               <div class="px-1">
-                <div class="w-12 btn btn-square border-none rounded-none mt-1 mr-2 bg-theme">
+                <div
+                  class="
+                    w-12
+                    btn btn-square
+                    border-none
+                    rounded-none
+                    mt-1
+                    mr-2
+                    bg-theme
+                  "
+                >
                   <i class="fas fa-user main-theme text-2xl"></i>
                 </div>
               </div>
             </label>
-            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+            <ul
+              tabindex="0"
+              class="
+                dropdown-content
+                menu
+                p-2
+                shadow
+                bg-base-100
+                rounded-box
+                w-52
+              "
+            >
               <li><a class="w-full">Edit Profile</a></li>
               <li><a class="w-full">Logout</a></li>
             </ul>
@@ -48,15 +75,24 @@
 
           <li>
             <div class="grid grid-rows-1 p-0 m-0">
-              <p class="text-white grid-cols-1"> <b class="text-lg">Washeem</b> <br> Arshad</p>
+              <p class="text-white grid-cols-1">
+                <b class="text-lg">Washeem</b> <br />
+                Arshad
+              </p>
             </div>
           </li>
-
         </ul>
       </div>
 
       <!-- MOBILE -->
-      <div class="flex-none lg:hidden ml-auto dropdown dropdown-bottom dropdown-end">
+      <div
+        class="
+          flex-none
+          lg:hidden
+          ml-auto
+          dropdown dropdown-bottom dropdown-end
+        "
+      >
         <label tabindex="0" class="">
           <div class="avatar pr-1">
             <div class="w-12 rounded-full">
@@ -64,15 +100,17 @@
             </div>
           </div>
         </label>
-        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-40">
+        <ul
+          tabindex="0"
+          class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-40"
+        >
           <li><a class="w-full">Edit Profile</a></li>
           <li><a class="w-full">Logout</a></li>
         </ul>
       </div>
-
     </div>
-    <br>
-    <hr class="bg-white border border-white">
+    <br />
+    <hr class="bg-white border border-white" />
 
     <div class="text-white flex text-xl my-3">
       <a routerLink="/video" class="mx-3">Video</a> /
@@ -84,7 +122,7 @@
       <a routerLink="/channels" class="mx-3">Channels</a>
     </div>
 
-    <hr class="bg-white border border-white">
+    <hr class="bg-white border border-white" />
 
     <!-- Page content here -->
     <div class="ml-3 mr-3 mt-3">
@@ -99,10 +137,6 @@
       <!-- Sidebar content here -->
       <!-- <li><a>Sidebar Item 1</a></li>
       <li><a>Sidebar Item 2</a></li> -->
-
     </ul>
-
   </div>
 </div>
-
-
